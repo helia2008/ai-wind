@@ -1,14 +1,29 @@
 site:
   name: AIWind
-  site: 'https://你的网站.pages.dev'   # 先留空，部署后回来改
+  site: 'https://你的网站.pages.dev'   # 等 Cloudflare 部署完成后回来改成真实域名
   base: '/'
   trailingSlash: false
 
+# AI 产品落地页专属 SEO
 metadata:
   title:
     default: AIWind
     template: '%s — AIWind'
-  description: 探索人工智能的无限可能 | Astro + Tailwind 驱动的 AI 主题网站
+  description: 🚀 下一代 AI 智能产品落地页模板 | 用 Astro + Tailwind 30 秒打造专业 AI 官网、AI 工具站、AI SaaS 展示页
   openGraph:
     images:
-      - url: '~/assets/images/hero-ai.png'   # 后面我们会换图
+      - url: '~/assets/images/hero-ai.png'
+        width: 1200
+        height: 628
+    type: website
+
+i18n:
+  language: zh   # 改成中文（如果你后面想全英文可以改回 en）
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: false   # 产品落地页暂时关闭博客，后续需要再打开
+
+ui:
+  theme: 'system'
