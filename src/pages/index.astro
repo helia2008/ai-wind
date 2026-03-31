@@ -21,34 +21,27 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
-  >
-    <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
-    </Fragment>
+ <Hero
+  actions={[
+    {
+      variant: 'primary',
+      text: '立即体验 AIWind',
+      href: '#',
+      icon: 'tabler:rocket',
+    },
+    { text: '观看演示', href: '#features' },
+  ]}
+  image={{ src: '~/assets/images/hero-ai.png', alt: 'AIWind 未来智能产品' }}
+>
+  <Fragment slot="title">
+    AIWind — <span class="text-accent dark:text-white">智能 AI</span> 产品落地页
+  </Fragment>
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
-    </Fragment>
-  </Hero>
+  <Fragment slot="subtitle">
+    用 Astro + Tailwind 打造下一代 AI 官网<br class="hidden sm:block" />
+    智能对话 • 图像生成 • 数据分析 • 一站式 AI 产品展示
+  </Fragment>
+</Hero>
 
   <!-- Note Widget ******************* -->
 
@@ -62,43 +55,37 @@ const metadata = {
     title="What you get with AstroWind"
     subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
     items={[
-      {
-        title: 'Astro + Tailwind CSS Integration',
-        description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
-      },
-      {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
-      },
-      {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
-      },
-    ]}
+  {
+    title: '智能 AI 助手',
+    description: '内置多模态大模型，支持自然语言交互、代码生成、实时决策，秒级响应用户需求。',
+    icon: 'tabler:robot',
+  },
+  {
+    title: 'AI 图像 / 视频生成',
+    description: 'Flux、Stable Diffusion、Sora 级生成能力，一键产出专业级视觉内容。',
+    icon: 'tabler:photo',
+  },
+  {
+    title: '实时数据智能分析',
+    description: '自动抓取、分析、预测数据趋势，为您的 AI 产品提供决策引擎。',
+    icon: 'tabler:chart-bar',
+  },
+  {
+    title: '无缝 API 集成',
+    description: '支持 OpenAI、Claude、Groq、Midjourney 等主流 AI 接口，一行代码接入。',
+    icon: 'tabler:api',
+  },
+  {
+    title: '高性能静态部署',
+    description: 'Astro 驱动，全球 CDN 加速，Lighthouse 满分，AI 产品秒开零等待。',
+    icon: 'tabler:rocket',
+  },
+  {
+    title: '自定义 AI 工作流',
+    description: '可视化拖拽构建专属 AI 流程，支持 RAG、Agent、Multi-Agent 架构。',
+    icon: 'tabler:brain',
+  },
+]}  
   />
 
   <!-- Content Widget **************** -->
